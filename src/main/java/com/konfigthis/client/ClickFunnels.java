@@ -1,0 +1,126 @@
+package com.konfigthis.client;
+
+import com.konfigthis.client.api.ContactApi;
+import com.konfigthis.client.api.ContactsAppliedTagApi;
+import com.konfigthis.client.api.ContactsTagApi;
+import com.konfigthis.client.api.CourseApi;
+import com.konfigthis.client.api.CoursesEnrollmentApi;
+import com.konfigthis.client.api.CoursesLessonApi;
+import com.konfigthis.client.api.CoursesSectionApi;
+import com.konfigthis.client.api.FormApi;
+import com.konfigthis.client.api.FormsFieldApi;
+import com.konfigthis.client.api.FormsFieldSetApi;
+import com.konfigthis.client.api.FormsFieldsOptionApi;
+import com.konfigthis.client.api.FormsSubmissionApi;
+import com.konfigthis.client.api.FormsSubmissionsAnswerApi;
+import com.konfigthis.client.api.FulfillmentApi;
+import com.konfigthis.client.api.FulfillmentsLocationApi;
+import com.konfigthis.client.api.ImageApi;
+import com.konfigthis.client.api.OrderApi;
+import com.konfigthis.client.api.OrdersAppliedTagApi;
+import com.konfigthis.client.api.OrdersInvoiceApi;
+import com.konfigthis.client.api.OrdersInvoicesRestockApi;
+import com.konfigthis.client.api.OrdersTagApi;
+import com.konfigthis.client.api.OrdersTransactionApi;
+import com.konfigthis.client.api.ProductApi;
+import com.konfigthis.client.api.ProductsPriceApi;
+import com.konfigthis.client.api.ProductsTagApi;
+import com.konfigthis.client.api.ProductsVariantApi;
+import com.konfigthis.client.api.ShippingLocationGroupApi;
+import com.konfigthis.client.api.ShippingPackageApi;
+import com.konfigthis.client.api.ShippingProfileApi;
+import com.konfigthis.client.api.ShippingRateApi;
+import com.konfigthis.client.api.ShippingRatesNameApi;
+import com.konfigthis.client.api.ShippingZoneApi;
+import com.konfigthis.client.api.TeamApi;
+import com.konfigthis.client.api.UserApi;
+import com.konfigthis.client.api.WebhooksOutgoingEndpointApi;
+import com.konfigthis.client.api.WebhooksOutgoingEventApi;
+import com.konfigthis.client.api.WorkspaceApi;
+
+public class ClickFunnels {
+    private ApiClient apiClient;
+    public final ContactApi contact;
+    public final ContactsAppliedTagApi contactsAppliedTag;
+    public final ContactsTagApi contactsTag;
+    public final CourseApi course;
+    public final CoursesEnrollmentApi coursesEnrollment;
+    public final CoursesLessonApi coursesLesson;
+    public final CoursesSectionApi coursesSection;
+    public final FormApi form;
+    public final FormsFieldApi formsField;
+    public final FormsFieldSetApi formsFieldSet;
+    public final FormsFieldsOptionApi formsFieldsOption;
+    public final FormsSubmissionApi formsSubmission;
+    public final FormsSubmissionsAnswerApi formsSubmissionsAnswer;
+    public final FulfillmentApi fulfillment;
+    public final FulfillmentsLocationApi fulfillmentsLocation;
+    public final ImageApi image;
+    public final OrderApi order;
+    public final OrdersAppliedTagApi ordersAppliedTag;
+    public final OrdersInvoiceApi ordersInvoice;
+    public final OrdersInvoicesRestockApi ordersInvoicesRestock;
+    public final OrdersTagApi ordersTag;
+    public final OrdersTransactionApi ordersTransaction;
+    public final ProductApi product;
+    public final ProductsPriceApi productsPrice;
+    public final ProductsTagApi productsTag;
+    public final ProductsVariantApi productsVariant;
+    public final ShippingLocationGroupApi shippingLocationGroup;
+    public final ShippingPackageApi shippingPackage;
+    public final ShippingProfileApi shippingProfile;
+    public final ShippingRateApi shippingRate;
+    public final ShippingRatesNameApi shippingRatesName;
+    public final ShippingZoneApi shippingZone;
+    public final TeamApi team;
+    public final UserApi user;
+    public final WebhooksOutgoingEndpointApi webhooksOutgoingEndpoint;
+    public final WebhooksOutgoingEventApi webhooksOutgoingEvent;
+    public final WorkspaceApi workspace;
+
+    public ClickFunnels() {
+        this(null);
+    }
+
+    public ClickFunnels(Configuration configuration) {
+        this.apiClient = new ApiClient(null, configuration);
+        this.contact = new ContactApi(this.apiClient);
+        this.contactsAppliedTag = new ContactsAppliedTagApi(this.apiClient);
+        this.contactsTag = new ContactsTagApi(this.apiClient);
+        this.course = new CourseApi(this.apiClient);
+        this.coursesEnrollment = new CoursesEnrollmentApi(this.apiClient);
+        this.coursesLesson = new CoursesLessonApi(this.apiClient);
+        this.coursesSection = new CoursesSectionApi(this.apiClient);
+        this.form = new FormApi(this.apiClient);
+        this.formsField = new FormsFieldApi(this.apiClient);
+        this.formsFieldSet = new FormsFieldSetApi(this.apiClient);
+        this.formsFieldsOption = new FormsFieldsOptionApi(this.apiClient);
+        this.formsSubmission = new FormsSubmissionApi(this.apiClient);
+        this.formsSubmissionsAnswer = new FormsSubmissionsAnswerApi(this.apiClient);
+        this.fulfillment = new FulfillmentApi(this.apiClient);
+        this.fulfillmentsLocation = new FulfillmentsLocationApi(this.apiClient);
+        this.image = new ImageApi(this.apiClient);
+        this.order = new OrderApi(this.apiClient);
+        this.ordersAppliedTag = new OrdersAppliedTagApi(this.apiClient);
+        this.ordersInvoice = new OrdersInvoiceApi(this.apiClient);
+        this.ordersInvoicesRestock = new OrdersInvoicesRestockApi(this.apiClient);
+        this.ordersTag = new OrdersTagApi(this.apiClient);
+        this.ordersTransaction = new OrdersTransactionApi(this.apiClient);
+        this.product = new ProductApi(this.apiClient);
+        this.productsPrice = new ProductsPriceApi(this.apiClient);
+        this.productsTag = new ProductsTagApi(this.apiClient);
+        this.productsVariant = new ProductsVariantApi(this.apiClient);
+        this.shippingLocationGroup = new ShippingLocationGroupApi(this.apiClient);
+        this.shippingPackage = new ShippingPackageApi(this.apiClient);
+        this.shippingProfile = new ShippingProfileApi(this.apiClient);
+        this.shippingRate = new ShippingRateApi(this.apiClient);
+        this.shippingRatesName = new ShippingRatesNameApi(this.apiClient);
+        this.shippingZone = new ShippingZoneApi(this.apiClient);
+        this.team = new TeamApi(this.apiClient);
+        this.user = new UserApi(this.apiClient);
+        this.webhooksOutgoingEndpoint = new WebhooksOutgoingEndpointApi(this.apiClient);
+        this.webhooksOutgoingEvent = new WebhooksOutgoingEventApi(this.apiClient);
+        this.workspace = new WorkspaceApi(this.apiClient);
+    }
+
+}
